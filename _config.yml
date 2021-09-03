@@ -3,7 +3,7 @@ title: Jekyll Basics
 email: info@wiredcraft.com
 description: "A boilerplate set up to create a bilingual Jekyll website."
 keywords:
-- Jekyll
+  - Jekyll
 
 # URL
 url: "https://wiredcraft.github.io/jekyll-basics"
@@ -30,7 +30,7 @@ sitemap:
   changefreq: weekly
 
 # Build settings
-exclude: ['README.md', 'Makefile']
+exclude: ["README.md", "Makefile"]
 
 # Collections
 permalink: /:categories/:title/
@@ -50,16 +50,15 @@ defaults:
 
 # Plugins
 plugins:
-- jekyll-sitemap
+  - jekyll-sitemap
 
 # Multiligual
 lang:
   - en
   - fr
-  - zh
+  - srd
 
 # Version (helps with force reloading assets)
 version: sparkle
-
 # Jekyll+ (not useful if you're running on GitHub pages)
 # jekyllplus: Wiredcraft/jekyll-basics/master

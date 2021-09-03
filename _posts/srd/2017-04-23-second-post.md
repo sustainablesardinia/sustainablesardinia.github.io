@@ -1,9 +1,9 @@
 ---
-title: 第三篇文章
-description: 这是“文章“列表里的第三篇文章。
-lang: zh
-categories: zh
-image: /files/images/china-lamp.jpg
+title: 第二篇文章
+description: 这是“文章“列表里的第二篇文章。
+lang: srd
+categories: srd
+image: /files/images/china-shanghai.jpg
 ---
 
 考作英図貫多作州目表経済取文化智刊。惑気写描口禁制観提好成暮劇部。見文減温陸吉野立著周湖一者県。案以環奈得在全家改三情球浮国料記熊相思。信治乗公懸治製方設普憲会独掘落銃爆読伸。氷両持表導所能情方演滋是忌著東支年。車載公屋足法月負響真目発味交半推情本抗。分学性千負年局別柱供全碁。打中著姫外挙究粧索昨備高時性著万。
