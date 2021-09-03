@@ -1,0 +1,21 @@
+---
+---
+
+@import "minima";
+@import "minima/syntax-highlighting";
+.site-nav .locale-selector {
+  label {
+    margin-right: 5px;
+  }
+  button {
+    display: inline-block;
+    width: 30px;
+    margin-right: 10px;
+    padding: 0;
+    border: solid 2px transparent;
+    cursor: pointer;
+  }
+  button.active {
+    border-color: blue;
+  }
+}

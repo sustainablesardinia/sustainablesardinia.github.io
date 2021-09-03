@@ -1,0 +1,29 @@
+id: 20ad74a6-c0fa-44d5-a9a0-4e8ab0a0e60d
+deploy:
+  directory: _site
+plugins:
+  - name: i18n
+    options:
+      defaultLocale: en
+      locales:
+        es:
+          languages:
+            - es
+          countries:
+            - mx
+            - cr
+            - es
+        de:
+          languages:
+            - de
+        fr:
+          languages:
+            - fr
+          countries:
+            - fr
+  - name: webpage
+    options: {}
+  - name: custom-errors
+    options:
+      errors:
+        '404': 404.html

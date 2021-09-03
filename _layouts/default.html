@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ site.active_lang }}">
+  {%- include head.html -%}
+
+  <body>
+
+    {%- include header.html -%}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+
+    {%- include footer.html -%}
+
+    <script>
+    var DEFAULT_LOCALE = '{{site.default_lang}}';
+
+    // JavaScript for handling changing the active locale. 
+    document.querySelectorAll("div.locale-selector button").forEach(function(elem) {
+      elem.addEventListener("click", function() {
+        var locale = elem.getAttribute("data-locale");
+        location.replace(location.pathname + '?__locale=' + locale);
+      });
+    });
+    </script>
+  </body>
+
+</html>
