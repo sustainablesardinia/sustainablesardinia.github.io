@@ -1,26 +1,65 @@
-permalink: pretty
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# Site settings
+title: Jekyll Basics
+email: info@wiredcraft.com
+description: "A boilerplate set up to create a bilingual Jekyll website."
+keywords:
+- Jekyll
 
-exclude:
-  [
-    "README.md",
-    "Gemfile",
-    "Gemfile.lock",
-    "deploy.sh",
-    "aero-deploy.tar.gz",
-    "aero-debug.log",
-  ]
+# URL
+url: "https://wiredcraft.github.io/jekyll-basics"
+baseurl: ""
 
-# jekyll-polyglot config
-languages: ["en", "es", "de", "fr"]
-default_lang: "en"
-exclude_from_localization: ["assets"]
-data_dir: ./_data
+# Google tracking (Analytics and Google Tag Manager)
+# google_tag_manager: GTM-XXXXXX
+# google_analytics: UA-XXXXXXX-X
+
+# SEO
+twitter: wiredcraft
+facebook: https://www.facebook.com/teamwiredcraft
+logo: /assets/logo.png
+image: /assets/logo.png
+social:
+  - https://www.facebook.com/teamwiredcraft
+  - https://twitter.com/wiredcraft
+  - https://www.linkedin.com/company/wiredcraft
+  - https://github.com/wiredcraft
+  - https://weibo.com/1970385015/
+
+# Sitemap (see sitemap.xml)
+sitemap:
+  changefreq: weekly
 
 # Build settings
-markdown: kramdown
-theme: minima
+exclude: ['README.md', 'Makefile']
+
+# Collections
+permalink: /:categories/:title/
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      class: post
+  - scope:
+      path: ""
+      type: drafts
+    values:
+      layout: post
+      class: post
+
+# Plugins
 plugins:
-  - jekyll-feed
-  - jekyll-polyglot
+- jekyll-sitemap
+
+# Multiligual
+lang:
+  - en
+  - fr
+  - zh
+
+# Version (helps with force reloading assets)
+version: sparkle
+
+# Jekyll+ (not useful if you're running on GitHub pages)
+# jekyllplus: Wiredcraft/jekyll-basics/master

@@ -1,6 +1,6 @@
-_site
-.sass-cache
-.jekyll-metadata
-.vscode
-aero-debug.log
-aero-deploy.tar.gz
+.*
+!.gitignore
+!.gitmodules
+*~
+
+_site/
