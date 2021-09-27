@@ -1,9 +1,9 @@
 ---
-title: Second article
-description: 'Ceci est le second article de la collection "posts".'
-lang: fr
-categories: fr
-image: /files/images/china-shanghai.jpg
+title: Premier article
+description: 'Ceci est le premier article de la collection "posts".'
+lang: it
+categories: it
+image: /files/images/china-street.jpg
 ---
 
 Lorem ipsum dolor sit amet, augue neglegentur ex sed, ne odio diam labitur vel. Quo te oratio maiestatis. Ne eum nisl dolor. Vel saepe nusquam ea, an atqui tation mel.

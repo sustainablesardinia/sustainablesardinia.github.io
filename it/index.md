@@ -1,6 +1,7 @@
 ---
 layout: front
+lang: it
+categories: it
 title: The Sardinia Sustainability Initiative
-description: site.description
-lang: en
+description: "Una rete multi-disciplinare "
 ---

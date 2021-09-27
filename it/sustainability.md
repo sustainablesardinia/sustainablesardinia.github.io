@@ -1,7 +1,7 @@
 ---
 layout: page
-lang: fr
-categories: fr
-title: Sustainabilitè
+lang: it
+categories: it
+title: Sostenibilità
 description: "Test for sustainability"
 ---

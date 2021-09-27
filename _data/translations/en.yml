@@ -1,9 +1,10 @@
 lang:
   en: English
-  fr: French
+  it: Italian
   srd: Sardinian
 menu:
   home: Home
   blog: Blog
   github: See on GitHub
   sustainability: Sustainability
+  manifesto: Manifesto

@@ -1,7 +1,7 @@
 # Site settings
 title: Sardinia Sustainability
 email: sardiniasustainability@mail.com
-description: "A boilerplate set up to create a bilingual Jekyll website."
+description: "A multi-disciplinary network of people working towards sustainable development in Sardinia, using methods from mathematics and computer science. Not for profit."
 keywords:
   - Jekyll
 
@@ -53,10 +53,8 @@ plugins:
 # Multiligual
 lang:
   - en
-  - fr
+  - it
   - srd
 
 # Version (helps with force reloading assets)
 version: sparkle
-# Jekyll+ (not useful if you're running on GitHub pages)
-# jekyllplus: Wiredcraft/jekyll-basics/master
