@@ -1,4 +1,6 @@
 - id: home
   path: /
+- id: sustainability
+  path: /sustainability/
 - id: github
   url: https://github.com/Wiredcraft/jekyll-basics

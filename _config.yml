@@ -1,12 +1,12 @@
 # Site settings
-title: Jekyll Basics
-email: info@wiredcraft.com
+title: Sardinia Sustainability
+email: sardiniasustainability@mail.com
 description: "A boilerplate set up to create a bilingual Jekyll website."
 keywords:
   - Jekyll
 
 # URL
-url: "https://wiredcraft.github.io/jekyll-basics"
+url: "https://sardiniasustainability.github.io/"
 baseurl: ""
 
 # Google tracking (Analytics and Google Tag Manager)
@@ -14,16 +14,14 @@ baseurl: ""
 # google_analytics: UA-XXXXXXX-X
 
 # SEO
-twitter: wiredcraft
-facebook: https://www.facebook.com/teamwiredcraft
+twitter: sardiniasust
+facebook: https://www.facebook.com/sardiniasustainability
 logo: /assets/logo.png
 image: /assets/logo.png
 social:
-  - https://www.facebook.com/teamwiredcraft
-  - https://twitter.com/wiredcraft
-  - https://www.linkedin.com/company/wiredcraft
-  - https://github.com/wiredcraft
-  - https://weibo.com/1970385015/
+  - https://www.facebook.com/sardiniasustainability
+  - https://twitter.com/sardiniasust
+  - https://github.com/sardiniasustainability
 
 # Sitemap (see sitemap.xml)
 sitemap:
