@@ -5,11 +5,13 @@
 //     $black: #111;
 //     $blue: #0066cc;
 //
-//     /* Fonts */
-//
-//     $body: Georgia,Times, "Times New Roman", serif;
-//     $headline: "Helvetica Neue", Helvetica, Arial, sans-serif;
-//
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital@0;1&family=PT+Sans&display=swap');
+$body: Alegreya, "Times New Roman", serif;
+$headline: "PT Sans", Arial, sans-serif;
+$menuBar: "PT Sans", Arial, sans-serif;
+
 //     /* Partials */
 //
 //     $partials: (
