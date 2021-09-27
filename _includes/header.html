@@ -1,5 +1,6 @@
 <nav class="menu">
   <section class="links">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/favicons/favicon-32x32.png" sizes="32x32" type="image/png" style="vertical-align: middle;">
     <strong class="">{{ site.title }}</strong>
     {% for item in site.data.menu %}
       {% if item.url %}<a href="{{ item.url }}">{{ t[lang].menu[item.id] }}</a>
