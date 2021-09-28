@@ -39,9 +39,13 @@
     .social-media-container {      
       vertical-align: middle;
       display: inline-block;
-
       height: $socialMediaLogoSize;
       width: $socialMediaLogoSize;   
+    }
+
+    .social-media-logo {
+      max-width:100%;
+      max-height:100%;
     }
   }
 }
