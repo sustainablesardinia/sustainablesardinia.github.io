@@ -1,11 +1,15 @@
 <nav class="menu">
   <section class="links">
-    <img src="{{ site.url }}{{ site.baseurl }}/assets/favicons/favicon-32x32.png" sizes="32x32" type="image/png" style="vertical-align: middle;">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/logo.png" class="website-logo" type="image/png">
     <strong class="">{{ site.title }}</strong>
     {% for item in site.data.menu %}
-      {% if item.url %}<a href="{{ item.url }}">{{ t[lang].menu[item.id] }}</a>
-      {% else %}<a href="{{ site.url }}{{ site.baseurl }}{{ t_url_prefix }}{{ item.path }}">{{ t[lang].menu[item.id] }}</a>{% endif %}
+    {% if item.url %}<a href="{{ item.url }}">{{ t[lang].menu[item.id] }}</a>
+    {% else %}<a href="{{ site.url }}{{ site.baseurl }}{{ t_url_prefix }}{{ item.path }}">{{ t[lang].menu[item.id]
+      }}</a>{% endif %}
     {% endfor %}
+  </section>
+  <section class="social-media">
+    {% include social-media-links.html %}
   </section>
   <section class="languages">
     {% include lang.html %}

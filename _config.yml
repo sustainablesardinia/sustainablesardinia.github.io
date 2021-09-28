@@ -15,7 +15,9 @@ baseurl: ""
 
 # SEO
 twitter: sardiniasust
-facebook: https://www.facebook.com/sardiniasustainability
+facebook: sardiniasustainability
+github: sardiniasustainability
+instagram: sardiniasustainability
 logo: /assets/logo.png
 image: /assets/logo.png
 social:

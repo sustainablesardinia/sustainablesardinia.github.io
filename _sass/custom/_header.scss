@@ -21,8 +21,25 @@
   .links {
     font-family: $menuBar;
     float: left;
+    .website-logo {
+      vertical-align: middle;
+      height: $websiteLogoSize;
+      width: $websiteLogoSize;
+    }
   }
-  .languages {
+  .languages {    
+    float: right;
     font-family: $menuBar;
+  }
+
+  .social-media {
+    float: left;
+    .social-media-container {      
+      vertical-align: middle;
+      display: inline-block;
+
+      height: $socialMediaLogoSize;
+      width: $socialMediaLogoSize;   
+    }
   }
 }
