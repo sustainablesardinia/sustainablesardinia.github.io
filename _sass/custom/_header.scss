@@ -20,13 +20,15 @@
   }
   .links {
     font-family: $menuBar;
-    float: left;
-    .website-logo {
-      vertical-align: middle;
-      height: $websiteLogoSize;
-      width: $websiteLogoSize;
-    }
+    float: left;    
   }
+
+  .website-logo {
+    vertical-align: middle;
+    height: $websiteLogoSize;
+    width: $websiteLogoSize;
+  }
+
   .languages {    
     float: right;
     font-family: $menuBar;
