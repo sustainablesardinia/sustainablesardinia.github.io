@@ -6,7 +6,7 @@ keywords:
   - Jekyll
 
 # URL
-url: "https://sardiniasustainability.github.io/"
+url: "https://sardiniasustainability.github.io"
 baseurl: ""
 
 # Google tracking (Analytics and Google Tag Manager)
@@ -18,8 +18,8 @@ twitter: sardiniasust
 facebook: sardiniasustainability
 github: sardiniasustainability
 instagram: sardiniasustainability
-logo: /assets/logo.svg
-image: /assets/logo.svg
+logo: /assets/logo.png
+image: /assets/logo.png
 social:
   - https://www.facebook.com/sardiniasustainability
   - https://twitter.com/sardiniasust
