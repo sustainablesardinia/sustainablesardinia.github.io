@@ -1,12 +1,40 @@
 <nav class="menu">
   <section class="links">
-    <img src="{{ site.url }}{{ site.baseurl }}/assets/logo-small.png" class="website-logo">
-    <strong class="">{{ site.title }}</strong>
-    {% for item in site.data.menu %}
-    {% if item.url %}<a href="{{ item.url }}">{{ t[lang].menu[item.id] }}</a>
-    {% else %}<a href="{{ site.url }}{{ site.baseurl }}{{ t_url_prefix }}{{ item.path }}">{{ t[lang].menu[item.id]
-      }}</a>{% endif %}
-    {% endfor %}
+    <div id="take-to-homepage" onclick="location.href='{{ site.url }}{{ site.baseurl }}';" style="cursor: pointer;">
+      <img src="{{ site.url }}{{ site.baseurl }}/assets/logo-small.png" class="website-logo">
+      <strong class="">{{ site.title }}</strong>
+    </div>
+
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropdown-button">{{ site.data.translations.[lang].dropdown }}</button>
+      <div id="dropdown-content" class="dropdown-content">
+        {% for item in site.data.menu %}
+        {% if item.url %}<a href="{{ item.url }}">{{ t[lang].menu[item.id] }}</a>
+        {% else %}<a href="{{ site.url }}{{ site.baseurl }}{{ t_url_prefix }}{{ item.path }}">{{ t[lang].menu[item.id]
+          }}</a>{% endif %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <script>
+
+      console.log("this worked");
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("dropdown-content").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function (e) {
+        if (!e.target.matches('.dropdown-button')) {
+          var myDropdown = document.getElementById("dropdown-content");
+          if (myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
+          }
+        }
+      }
+    </script>
   </section>
   <section class="social-media">
     {% include social-media-links.html %}

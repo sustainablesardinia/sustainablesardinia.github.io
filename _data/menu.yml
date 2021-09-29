@@ -1,5 +1,3 @@
-- id: home
-  path: /
 - id: sustainability
   path: /sustainability/
 - id: manifesto
