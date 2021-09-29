@@ -2,14 +2,20 @@
   background: $black;
   color: #FFF;
   margin-bottom: 2*$space;
-  text-align: right;
+
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   .container {
     padding-bottom: $space/2;
     padding-top: $space/2;
   }
+
   a {
     color: inherit;
-    margin-left: 1.5*$space/2;
     opacity: $unselectedOpacity;
     transition-duration: $ease;
     transition-property: opacity;
@@ -18,27 +24,48 @@
       text-decoration: none;
     }
   }
-  .links {
+
+  .left-side-container {
+    float: left;
+    display: inline; 
+    vertical-align: middle;
     font-family: $menuBar;
-    float: left;    
   }
 
-  .website-logo {
+  .website-logo {    
     vertical-align: middle;
+    display: inline-block;
     height: $websiteLogoSize;
     width: $websiteLogoSize;
   }
 
+  .title {    
+    vertical-align: middle;
+    display: inline-block;
+    padding-bottom: 1px;
+  }
+
   .languages {    
     float: right;
+    vertical-align: middle;
+    display: inline; 
     font-family: $menuBar;
   }
 
-  .social-media {
-    float: left;
+  .lang-link {
+    margin-left: 12px;
+  }
+
+  .social-media {    
+    display: inline-block;
+    vertical-align: middle;
+
     .social-media-container {      
       vertical-align: middle;
       display: inline-block;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 2px;
       height: $socialMediaLogoSize;
       width: $socialMediaLogoSize;   
     }
@@ -49,17 +76,19 @@
     }
   }
 
-  #take-to-homepage {
-    float: left;
+  #take-to-homepage { 
+    display: inline-block;
+    vertical-align: middle;
     background-color: inherit;
+    text-align: center;
   }
 
   .dropdown-button {
-    margin-left: 1.5*$space/2;
     background-color: inherit;
     color: inherit;
     opacity: $unselectedOpacity;
     font-family: $menuBar;
+    text-align: center;
     border: none;
   }
 
@@ -72,7 +101,12 @@
   .dropdown {
     position: relative;
     display: inline-block;
+    vertical-align: middle;
+    justify-content: center;
     overflow: visible;
+    margin-left: 4px;
+    margin-right: 4px;
+    padding-bottom: 1px;
   }
 
   /* Dropdown Content (Hidden by Default) */

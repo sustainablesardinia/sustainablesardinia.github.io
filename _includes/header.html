@@ -1,8 +1,9 @@
 <nav class="menu">
-  <section class="links">
-    <div id="take-to-homepage" onclick="location.href='{{ site.url }}{{ site.baseurl }}';" style="cursor: pointer;">
+  <div class="left-side-container">
+    <div id="take-to-homepage" onclick="location.href='{{ site.url }}{{ site.baseurl }}{{ t_url_prefix }}';"
+      style="cursor: pointer;">
       <img src="{{ site.url }}{{ site.baseurl }}/assets/logo-small.png" class="website-logo">
-      <strong class="">{{ site.title }}</strong>
+      <strong class="title">{{ site.title }}</strong>
     </div>
 
     <div class="dropdown">
@@ -35,11 +36,11 @@
         }
       }
     </script>
-  </section>
-  <section class="social-media">
-    {% include social-media-links.html %}
-  </section>
-  <section class="languages">
+    <div class="social-media">
+      {% include social-media-links.html %}
+    </div>
+  </div>
+  <div class="languages">
     {% include lang.html %}
-  </section>
+  </div>
 </nav>
