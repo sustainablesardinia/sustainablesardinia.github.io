@@ -47,16 +47,33 @@ defaults:
     values:
       layout: post
       class: post
+  - scope:
+      path: "en"
+    values:
+      lang: "en" # Set the default language for pages
+  - scope:
+      path: "it"
+    values:
+      lang: "it" # Set the default language for pages
+  - scope:
+      path: "srd"
+    values:
+      lang: "srd" # Set the default language for pages
 
 # Plugins
 plugins:
   - jekyll-sitemap
 
 # Multiligual
-lang:
+languages:
   - en
   - it
   - srd
+lang_default: en
 
 # Version (helps with force reloading assets)
 version: sparkle
+
+menu:
+  - sustainability
+  - manifesto

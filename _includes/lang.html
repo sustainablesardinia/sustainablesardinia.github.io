@@ -1,16 +1,18 @@
-{% for translation_lang in site.lang %}
-{% if translation_lang != lang %}
-{% if lang == lang_default %}
-{% assign translation_url = page.url | prepend: translation_lang | prepend: '/' %}
-{% else %}
-{% if translation_lang == lang_default %}
-{% assign translation_url = page.url | replace_first: lang, '' | replace_first: '//', '/' %}
-{% else %}
-{% assign translation_url = page.url | replace_first: lang, translation_lang %}
+{% if page.reference %}
+  {% assign translation_candidates = site.pages | where: "reference", page.reference %}
+  {% if translation_candidates.size == 0 %}
+    {% assign translation_candidates = site.posts | where: "reference", page.reference %}
+  {% endif %}
 {% endif %}
-{% endif %}
-<a class="lang-link" href="{{ site.url }}{{ site.baseurl }}{{ translation_url }}">
-  {{ t[translation_lang].lang[translation_lang] }}
-</a>
-{% endif %}
+
+{% for lang in site.languages %}
+  {% assign language-name = site.data.translations.[page.lang].language-names[lang] %}
+  {% unless page.lang == lang %}
+    {% assign alternate_target = translation_candidates | where: "lang", lang | first %}
+    {% if alternate_target %}
+      <a class="lang-link" href="{{ site.url }}{{ site.baseurl }}{{ alternate_target.url }}">
+        {{ language-name }}
+      </a>
+    {% endif %}
+  {% endunless %}
 {% endfor %}

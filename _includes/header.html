@@ -1,25 +1,27 @@
 <nav class="menu">
+
+  {% assign homepage = site.pages | where: 'lang', page.lang | where: 'reference', 'homepage' | first %}
+
   <div class="left-side-container">
-    <div id="take-to-homepage" onclick="location.href='{{ site.url }}{{ site.baseurl }}{{ t_url_prefix }}';"
+    <div
+      id="take-to-homepage"
+      onclick="location.href='{{ homepage.url }}';"
       style="cursor: pointer;">
       <img src="{{ site.url }}{{ site.baseurl }}/assets/logo-small.png" class="website-logo">
       <strong class="title">{{ site.title }}</strong>
     </div>
 
     <div class="dropdown">
-      <button onclick="myFunction()" class="dropdown-button">{{ site.data.translations.[lang].dropdown }}</button>
-      <div id="dropdown-content" class="dropdown-content">
-        {% for item in site.data.menu %}
-        {% if item.url %}<a href="{{ item.url }}">{{ t[lang].menu[item.id] }}</a>
-        {% else %}<a href="{{ site.url }}{{ site.baseurl }}{{ t_url_prefix }}{{ item.path }}">{{ t[lang].menu[item.id]
-          }}</a>{% endif %}
+      <button class="dropdown-button" onclick="myFunction()">{{ site.data.translations.[page.lang].dropdown }}</button>
+      <div class="dropdown-content" id="dropdown-content">
+        {% for item in site.menu %}
+          {% assign menu_item_curr_lang = site.pages | where: 'lang', page.lang | where: 'reference', item | first %}
+          <a href="{{ menu_item_curr_lang.url }}">{{  site.data.translations.[page.lang].menu.[item] }}</a>
         {% endfor %}
       </div>
     </div>
 
     <script>
-
-      console.log("this worked");
       /* When the user clicks on the button, 
       toggle between hiding and showing the dropdown content */
       function myFunction() {
