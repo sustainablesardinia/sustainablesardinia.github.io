@@ -1,5 +1,5 @@
 ---
-title: Sardinia Sustainability's webiste is online 
+title: Sardinia Sustainability's webste is online 
 description: "A first post for this website, and a summary of what's going on." 
 image: /files/images/sunrise.png 
 reference: first_post
