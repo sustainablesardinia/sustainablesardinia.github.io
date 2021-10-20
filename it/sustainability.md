@@ -5,4 +5,4 @@ categories: it
 reference: sustainability
 ---
 
-Work in progress
+{% include manifesto/ita/sostenibilita.md %}

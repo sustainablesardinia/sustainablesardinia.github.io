@@ -16,4 +16,4 @@ install: clean
 	# bower install --config.directory=$(js_vendors) $(js_packages)
 
 serve:
-	jekyll serve --config _config.yml,_config-dev.yml --incremental
+	jekyll serve --config _config.yml,_config-dev.yml --incremental --trace

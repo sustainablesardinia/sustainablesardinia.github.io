@@ -5,4 +5,4 @@ categories: srd
 reference: manifesto
 ---
 
-Work in progress
+{% include manifesto/srd/manifestu.md %}
