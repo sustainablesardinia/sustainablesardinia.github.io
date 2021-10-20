@@ -1,0 +1,22 @@
+<div id="social-media">
+  {% if site.email %}
+  <div class="social-media-container"><a href="mailto:{{ site.email }}" title="Email"><img class="social-media-logo"
+        src="{{ site.url }}{{ site.baseurl }}/assets/social/email.png"></a></div>
+  {% endif %}
+  {% if site.github %}
+  <div class="social-media-container"><a href="https://www.github.com/{{ site.github }}" title="GitHub"><img
+        class="social-media-logo" src="{{ site.url }}{{ site.baseurl }}/assets/social/github.svg"></a></div>
+  {% endif %}
+  {% if site.facebook %}
+  <div class="social-media-container"><a href="https://www.facebook.com/{{ site.facebook }}" title="Facebook"><img
+        class="social-media-logo" src="{{ site.url }}{{ site.baseurl }}/assets/social/facebook.svg"></a></div>
+  {% endif %}
+  {% if site.twitter %}
+  <div class="social-media-container"><a href="https://www.twitter.com/{{ site.twitter }}" title="Twitter"><img
+        class="social-media-logo" src="{{ site.url }}{{ site.baseurl }}/assets/social/twitter.svg"></a></div>
+  {% endif %}
+  {% if site.instagram %}
+  <div class="social-media-container"><a href="https://www.instagram.com/{{ site.instagram }}" title="Instagram"><img
+        class="social-media-logo" src="{{ site.url }}{{ site.baseurl }}/assets/social/instagram.svg"></a></div>
+  {% endif %}
+</div>

@@ -1,54 +1,80 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you: 
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+title: Sardinia Sustainability
+email: sardiniasustainability@mail.com
+description: "A multi-disciplinary network of people working towards sustainable development in Sardinia, using methods from mathematics and computer science. Not for profit."
+keywords:
+  - Jekyll
 
-title: Sardinia Computational Sustainability Initiative
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Computing for Sardinia: towards a sustainable environment, economy, and society. 
-  Not for profit.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://sardiniasustainability.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: sardiniasustainability
-github_username:  sardiniasustainability
+# URL
+url: "https://sardiniasustainability.github.io"
+baseurl: ""
+
+# Google tracking (Analytics and Google Tag Manager)
+# google_tag_manager: GTM-XXXXXX
+# google_analytics: UA-XXXXXXX-X
+
+# SEO
+twitter: sardiniasust
+facebook: sardiniasustainability
+github: sardiniasustainability
+instagram: sardiniasustainability
+logo: /assets/logo.png
+image: /assets/logo.png
+social:
+  - https://www.facebook.com/sardiniasustainability
+  - https://twitter.com/sardiniasust
+  - https://github.com/sardiniasustainability
+
+# Sitemap (see sitemap.xml)
+sitemap:
+  changefreq: weekly
 
 # Build settings
-theme: minima
-plugins:
-  - jekyll-feed
+exclude: ["README.md", "Makefile"]
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# Collections
+permalink: /:categories/:title/
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      class: post
+  - scope:
+      path: ""
+      type: drafts
+    values:
+      layout: post
+      class: post
+  - scope:
+      path: "en"
+    values:
+      lang: "en" # Set the default language for pages
+  - scope:
+      path: "it"
+    values:
+      lang: "it" # Set the default language for pages
+  - scope:
+      path: "srd"
+    values:
+      lang: "srd" # Set the default language for pages
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+
+# Multiligual
+languages:
+  - en
+  - it
+  - srd
+lang_default: en
+
+# Version (helps with force reloading assets)
+version: sparkle
+
+menu:
+  - initiative
+  - sustainability
+  - manifesto

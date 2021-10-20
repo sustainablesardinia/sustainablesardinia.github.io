@@ -1,0 +1,18 @@
+{% if page.reference %}
+  {% assign translation_candidates = site.pages | where: "reference", page.reference %}
+  {% if translation_candidates.size == 0 %}
+    {% assign translation_candidates = site.posts | where: "reference", page.reference %}
+  {% endif %}
+{% endif %}
+
+{% for lang in site.languages %}
+  {% assign language-name = site.data.translations.[page.lang].language-names[lang] %}
+  {% unless page.lang == lang %}
+    {% assign alternate_target = translation_candidates | where: "lang", lang | first %}
+    {% if alternate_target %}
+      <a class="lang-link" href="{{ site.url }}{{ site.baseurl }}{{ alternate_target.url }}">
+        {{ language-name }}
+      </a>
+    {% endif %}
+  {% endunless %}
+{% endfor %}

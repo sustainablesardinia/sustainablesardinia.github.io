@@ -1,0 +1,142 @@
+#header {
+  background: $black;
+  color: #FFF;
+  margin-bottom: 2*$space;
+
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .container {
+    padding-bottom: $space/2;
+    padding-top: $space/2;
+  }
+
+  a {
+    color: inherit;
+    opacity: $unselectedOpacity;
+    transition-duration: $ease;
+    transition-property: opacity;
+    &:hover {
+      opacity: 1;
+      text-decoration: none;
+    }
+  }
+
+  .left-side-container {
+    float: left;
+    display: inline; 
+    vertical-align: middle;
+    font-family: $menuBar;
+  }
+
+  .website-logo {    
+    vertical-align: middle;
+    display: inline-block;
+    height: $websiteLogoSize;
+    width: $websiteLogoSize;
+  }
+
+  .title {    
+    vertical-align: middle;
+    display: inline-block;
+    padding-bottom: 1px;
+  }
+
+  .languages {    
+    float: right;
+    vertical-align: middle;
+    display: inline; 
+    font-family: $menuBar;
+  }
+
+  .lang-link {
+    margin-left: 12px;
+  }
+
+  .social-media {    
+    display: inline-block;
+    vertical-align: middle;
+
+    .social-media-container {      
+      vertical-align: middle;
+      display: inline-block;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 2px;
+      height: $socialMediaLogoSize;
+      width: $socialMediaLogoSize;   
+    }
+
+    .social-media-logo {
+      height: $socialMediaLogoSize;
+      width: $socialMediaLogoSize;
+    }
+  }
+
+  #take-to-homepage { 
+    display: inline-block;
+    vertical-align: middle;
+    background-color: inherit;
+    text-align: center;
+  }
+
+  .dropdown-button {
+    background-color: inherit;
+    color: inherit;
+    opacity: $unselectedOpacity;
+    font-family: $menuBar;
+    text-align: center;
+    border: none;
+  }
+
+  /* Dropdown button on hover & focus */
+  .dropdown-button:hover, .dropdown-button:focus {
+    opacity: 1;
+  }
+
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    justify-content: center;
+    overflow: visible;
+    margin-left: 4px;
+    margin-right: 4px;
+    padding-bottom: 1px;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    text-align: left;
+    position: absolute;
+    background-color: $black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: inherit;
+    padding: 12px 16px;
+    
+    text-decoration: none;
+    display: block;
+  }
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    opacity: 1;
+    text-decoration: none;
+  }
+
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {
+    display: block;
+  }
+}

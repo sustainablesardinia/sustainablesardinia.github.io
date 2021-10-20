@@ -1,0 +1,8 @@
+{% comment %} PATH: prepare a path array without the language prefix. {% endcomment %}
+
+{% assign path = page.url | remove: '.html' | remove_first: '/' %}
+{% if page.lang != site.lang_default %}
+  {% assign path = path | remove_first: '/' | remove_first: page.lang %}
+{% endif %}
+{% assign path = path | split: '/' %}
+{% assign depth = path | size %}

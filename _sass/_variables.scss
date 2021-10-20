@@ -1,0 +1,25 @@
+// This is where you would override your variables. For example:
+//
+//     /* Colors */
+//
+//     $black: #111;
+//     $blue: #0066cc;
+//
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital@0;1&family=PT+Sans&display=swap');
+$body: Alegreya, "Times New Roman", serif;
+$headline: "PT Sans", Arial, sans-serif;
+$menuBar: "PT Sans", Arial, sans-serif;
+
+$container: 880px;
+
+$socialMediaLogoSize: 24px;
+$websiteLogoSize: 28px;
+
+//     /* Partials */
+//
+//     $partials: (
+//       base,
+//       button
+//     );
