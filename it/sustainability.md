@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: imported-page
 lang: it
 categories: it
 reference: sustainability

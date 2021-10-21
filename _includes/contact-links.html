@@ -1,0 +1,18 @@
+<div id="social-media">
+  {% if site.email %}
+    <div class="social-media-container">
+      <a href="mailto:{{ site.email }}" title="Email">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </div>
+  {% endif %}
+  {% if site.github %}
+    <div class="social-media-container">
+      <a href="https://www.github.com/{{ site.github }}" title="GitHub">
+        <i class="fa fa-github"></i>
+      </a>
+    </div>
+
+    {% include only-social-media-links.html %}
+  {% endif %}
+</div>

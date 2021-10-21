@@ -12,16 +12,18 @@ su manifestu, e comenti si fait a agiudai. Podis agatai totu custus informus
 clichendi in sa barra de navigamentu.
 
 Sighi Sardinia Sustainability puru in
-[Twitter](https://twitter.com/sardiniasust),
-[Facebook](https://facebook.com/sardiniasustainability), e
-[Instagram](https://instagram.com/sardiniasustainability). In i-custus social
+[Twitter](https://twitter.com/{{ site.twitter }}),
+[Facebook](https://facebook.com/{{ site.facebook }}), e
+[Instagram](https://instagram.com/{{ site.instagram }}). In i-custus social
 media apu intregau unus cantu artìculus interessantis e giassus chi pertocant
 chistionis de importu po custa faina, duncas sighiri in is social media podit
 essi puru una manera bona de cumprendi custa faina.
 
 Imoi Sardinia Sustainability tenit sceti duus progetus, chi deu ndi seu
 coordinadori, e su traballendi a ndi definiri su mori. Custu no ti depit firmai
-de [intregai unu curreu letròngiu](mailto:sardiniasustainability@mail.com) po
+de [intregai unu curreu letròngiu](mailto:{{ site.email }}) po
 proponni unu progetu o pregontai àterus informus.
 
 *Andria Piciau, su coordinadori*
+
+📷 "Sardinia, sunrise" de chrissusieking dd' ant donada cun licèntzia CC BY-NC-ND 2.0.

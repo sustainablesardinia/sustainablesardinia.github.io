@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: imported-page
 lang: en
 categories: en
 reference: initiative

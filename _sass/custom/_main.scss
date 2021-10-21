@@ -1,4 +1,4 @@
-h1 + p {
+h1+p {
   @include font-size($headline-3);
   line-height: 160%;
   margin-bottom: 2*$space;
@@ -17,6 +17,9 @@ li {
   @include font-size($larger);
 }
 
+.comments {
+  margin-top: 2*$space;
+}
 
 .cover {
   background-position: center center;
@@ -39,33 +42,40 @@ li {
       list-style: none;
       margin: 0;
       padding: 0;
+
       li {
         border-top: 1px solid $line-2;
         margin: 0;
         padding: 0;
+
         a {
           color: inherit;
           display: block;
           padding: $space 0;
           transition-duration: $ease;
           transition-property: background;
+
           &:hover {
             background: $light;
             text-decoration: none;
           }
         }
+
         h3 {
           margin: 0;
         }
+
         p {
           color: $grey;
           margin: 0;
         }
+
         h3,
         p {
           margin-left: 3*$space + 1.5*$space/2;
         }
       }
+
       .thumbnail {
         float: left;
         margin-right: 1.5*$space/2;

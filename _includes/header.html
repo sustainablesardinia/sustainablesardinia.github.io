@@ -8,7 +8,9 @@
       onclick="location.href='{{ homepage.url }}';"
       style="cursor: pointer;">
       <img src="{{ site.url }}{{ site.baseurl }}/assets/logo-small.png" class="website-logo">
-      <strong class="title">{{ site.title }}</strong>
+      <div id="title-container">
+        <strong class="title">{{ site.title }}</strong>
+      </div>
     </div>
 
     <div class="dropdown">
@@ -38,8 +40,8 @@
         }
       }
     </script>
-    <div class="social-media">
-      {% include social-media-links.html %}
+    <div class="contact-links">
+      {% include contact-links.html %}
     </div>
   </div>
   <div class="languages">

@@ -2,10 +2,11 @@ language-names:
   en: English
   it: Italian
   srd: Sardinian
-dropdown: About us
+dropdown: About
 menu:
   home: Home
   blog: Blog
+  contacts: Contacts
   initiative: The initiative
   sustainability: What does sustainability mean?
   manifesto: The manifesto

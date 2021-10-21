@@ -3,7 +3,12 @@ title: Sardinia Sustainability
 email: sardiniasustainability@mail.com
 description: "A multi-disciplinary network of people working towards sustainable development in Sardinia, using methods from mathematics and computer science. Not for profit."
 keywords:
-  - Jekyll
+  - sustainability
+  - sustainable development
+  - green
+  - Sardinia
+  - technology
+  - data science
 
 # URL
 url: "https://sardiniasustainability.github.io"
@@ -11,7 +16,10 @@ baseurl: ""
 
 # Google tracking (Analytics and Google Tag Manager)
 # google_tag_manager: GTM-XXXXXX
-# google_analytics: UA-XXXXXXX-X
+google_analytics: G-30EJ8EV134
+
+# Disquis, for comments
+disqus: sardinia-sustainability
 
 # SEO
 twitter: sardiniasust
@@ -41,6 +49,7 @@ defaults:
     values:
       layout: post
       class: post
+      comments: true
   - scope:
       path: ""
       type: drafts
@@ -78,3 +87,4 @@ menu:
   - initiative
   - sustainability
   - manifesto
+  - contacts
