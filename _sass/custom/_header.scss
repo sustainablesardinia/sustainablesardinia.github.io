@@ -28,7 +28,7 @@
 
   .left-side-container {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     font-family: $menuBar;
@@ -46,6 +46,7 @@
 
   .languages {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
