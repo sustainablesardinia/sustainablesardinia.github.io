@@ -1,7 +1,5 @@
 ---
 layout: imported-page
-lang: srd
-categories: srd
 reference: sustainability
 title: "Ita bolit nai sustenibilidadi?"
 ---

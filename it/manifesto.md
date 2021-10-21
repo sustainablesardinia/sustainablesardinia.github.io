@@ -1,7 +1,5 @@
 ---
 layout: imported-page
-lang: it
-categories: it
 reference: manifesto
 title: "Il manifesto"
 ---
