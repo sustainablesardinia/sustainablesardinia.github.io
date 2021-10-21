@@ -44,6 +44,10 @@
     <section id="content">
       <div class="container">
         {{ content }}
+
+        {% if page.comments == true and site.disqus %}
+          {% include disqus.html %}
+        {% endif %}
       </div>
     </section>
 

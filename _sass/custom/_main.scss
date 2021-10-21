@@ -17,6 +17,10 @@ li {
   @include font-size($larger);
 }
 
+.comments {
+  margin-top: 2*$space;
+}
+
 .cover {
   background-position: center center;
   background-repeat: no-repeat;

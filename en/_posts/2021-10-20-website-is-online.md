@@ -27,3 +27,5 @@ email](mailto:{{ site.email }}) to propose a project or ask for
 more info.
 
 *Andrea Picciau, the coordinator*
+
+📷 "Sardinia, sunrise" by chrissusieking is licensed under CC BY-NC-ND 2.0.

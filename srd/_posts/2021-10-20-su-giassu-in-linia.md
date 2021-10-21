@@ -25,3 +25,5 @@ de [intregai unu curreu letròngiu](mailto:{{ site.email }}) po
 proponni unu progetu o pregontai àterus informus.
 
 *Andria Piciau, su coordinadori*
+
+📷 "Sardinia, sunrise" de chrissusieking dd' ant donada cun licèntzia CC BY-NC-ND 2.0.

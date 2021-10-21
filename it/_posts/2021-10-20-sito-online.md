@@ -25,3 +25,5 @@ coordinatore e di cui sto definendo i dettagli. Questo non ti deve impedire di
 progetto o chiedere altre informazioni.
 
 *Andrea Picciau, il coordinatore*
+
+📷 "Sardinia, sunrise" di chrissusieking è rilasciata con licenza CC BY-NC-ND 2.0.
