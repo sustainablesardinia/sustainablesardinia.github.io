@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: imported-page
 lang: srd
 categories: srd
 reference: manifesto

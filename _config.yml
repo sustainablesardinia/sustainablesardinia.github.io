@@ -11,7 +11,7 @@ baseurl: ""
 
 # Google tracking (Analytics and Google Tag Manager)
 # google_tag_manager: GTM-XXXXXX
-# google_analytics: UA-XXXXXXX-X
+google_analytics: G-30EJ8EV134
 
 # SEO
 twitter: sardiniasust
@@ -78,3 +78,4 @@ menu:
   - initiative
   - sustainability
   - manifesto
+  - contacts

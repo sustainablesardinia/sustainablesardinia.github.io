@@ -25,7 +25,7 @@ $line-3: rgba($line, 0.3) !default;
 
 /* Sizes */
 
-$headline-1: 48 !default;
+$headline-1: 40 !default;
 $headline-2: 32 !default;
 $headline-3: 24 !default;
 $large: 24 !default;
@@ -36,9 +36,23 @@ $small: 12 !default;
 
 /* Fonts */
 
-$body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !default;
+$body: -apple-system,
+BlinkMacSystemFont,
+'Segoe UI',
+Roboto,
+Helvetica,
+Arial,
+sans-serif,
+'Apple Color Emoji',
+'Segoe UI Emoji',
+'Segoe UI Symbol' !default;
 $headline: $body !default;
-$code: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace !default;
+$code: 'SFMono-Regular',
+Consolas,
+'Liberation Mono',
+Menlo,
+Courier,
+monospace !default;
 
 /* Misc */
 
@@ -55,24 +69,19 @@ $container: 960px !default;
 
 $unselectedOpacity: 0.6;
 
-$breakpoints: (
-  tablet: 640px,
+$breakpoints: (tablet: 640px,
   desktop: 1024px,
-  highres: 1280px
-) !default;
+  highres: 1280px) !default;
 
 /* Switch */
 
-$switch: (
-  size: 1.5*$space/2,
+$switch: (size: 1.5*$space/2,
   length: 5*$space/3,
-  padding: 2px
-) !default;
+  padding: 2px) !default;
 
 /* Partials */
 
-$partials: (
-  base,
+$partials: (base,
   button,
   dropdown,
   form,
@@ -81,5 +90,4 @@ $partials: (
   modal,
   notification,
   switch,
-  tooltip
-) !default;
+  tooltip) !default;
