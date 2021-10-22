@@ -1,7 +1,7 @@
 ---
 title: Sardinia Sustainability's website is online 
 description: "A first post for this website, and a summary of what's going on." 
-image: /files/images/sunrise.png 
+image: /assets/images/sunrise.webp 
 reference: first_post
 ---
 

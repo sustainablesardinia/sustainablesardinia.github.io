@@ -1,7 +1,7 @@
 ---
 title: Il sito di Sardinia Sustainability è online
 description: "Un primo post per il sito, e un sommario di ciò che è sucesso"
-image: /files/images/sunrise.png 
+image: /assets/images/sunrise.webp 
 reference: first_post
 ---
 

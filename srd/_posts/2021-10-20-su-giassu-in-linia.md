@@ -1,7 +1,7 @@
 ---
 title: Su giassu de Sardinia Sustainability est in lìnia
 description: "Unu primu post po su giassu, e unu resumu de su chi est acuntèssiu." 
-image: /files/images/sunrise.png 
+image: /assets/images/sunrise.webp 
 reference: first_post
 ---
 
