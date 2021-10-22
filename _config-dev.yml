@@ -1,5 +1,0 @@
-# Override configuation for local development
-url: "http://localhost:4000"
-baseurl: ""
-google_tag_manager: false
-google_analytics: false
