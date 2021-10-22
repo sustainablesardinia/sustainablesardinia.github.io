@@ -15,7 +15,6 @@ url: "https://sardiniasustainability.github.io"
 baseurl: ""
 
 # Google tracking (Analytics and Google Tag Manager)
-# google_tag_manager: GTM-XXXXXX
 google_analytics: G-30EJ8EV134
 
 # Disquis, for comments
