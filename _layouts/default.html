@@ -3,13 +3,13 @@
 <!doctype html>
 <html lang="{{ page.lang }}">
   <head>
-    <!-- Font Awesome --> <link
-      href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
-      rel="stylesheet">
-
-    {% if site.google_tag_manager %}
-      {% include google/tag-manager.html %}
-    {% endif %}
+    <!-- Font Awesome -->
+    <script type="text/javascript">
+      //<![CDATA[
+      function loadCSS(e, t, n) { "use strict"; var i = window.document.createElement("link"); var o = t || window.document.getElementsByTagName("script")[0]; i.rel = "stylesheet"; i.href = e; i.media = "only x"; o.parentNode.insertBefore(i, o); setTimeout(function () { i.media = n || "all" }) }
+      loadCSS("//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css");
+      //]]>
+    </script>
 
     <title>
       {% if depth > 0 %}
@@ -31,9 +31,6 @@
       else %}{% unless page.reference == 'homepage' %} page-{{ path | join: '-' }}{%
       else %} page-front{% endunless %}{% endif %}{% if page.class %} {{ page.class
       }}{% endif %}">
-    {% if site.google_tag_manager %}
-      {% include google/tag-manager-noscript.html %}
-    {% endif %}
 
     <header id="header">
       <div class="container">
@@ -61,7 +58,7 @@
   <!--[if lt IE 9]><script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <script src="{{ site.url }}{{ site.baseurl }}/assets/scripts.js?version-{{ site.version }}" type="text/javascript"></script>
     {% if site.google_analytics %}
-      {% include google/analytics.html %}
+      {% include site-analytics.html %}
     {% endif %}
     {% for script in page.scripts %}
       <script src="{{ site.url }}{{ site.baseurl }}{{ script }}?tag-{{ site.tag }}" type="text/javascript"></script>
