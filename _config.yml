@@ -1,5 +1,5 @@
 # Site settings
-title: Sardinia Sustainability
+title: Sustainable Sardinia
 email: sardiniasustainability@mail.com
 description: "A multi-disciplinary network of people working towards sustainable development in Sardinia, using methods from mathematics and computer science. Not for profit."
 keywords:
@@ -11,7 +11,7 @@ keywords:
   - data science
 
 # URL
-url: "https://sardiniasustainability.github.io"
+url: "https://sustainablesardinia.github.io"
 baseurl: ""
 
 # Google tracking (Analytics and Google Tag Manager)
@@ -21,16 +21,16 @@ google_analytics: G-30EJ8EV134
 disqus: sardinia-sustainability
 
 # SEO
-twitter: sardiniasust
-facebook: sardiniasustainability
-github: sardiniasustainability
-instagram: sardiniasustainability
+twitter: sustsardinia
+facebook: sustainablesardinia
+github: sustainablesardinia
+instagram: sustsardinia
 logo: /assets/logo.png
 image: /assets/logo.png
 social:
-  - https://www.facebook.com/sardiniasustainability
-  - https://twitter.com/sardiniasust
-  - https://github.com/sardiniasustainability
+  - https://www.facebook.com/sustainablesardinia
+  - https://twitter.com/sustsardinia
+  - https://github.com/sustainablesardinia
 
 # Sitemap (see sitemap.xml)
 sitemap:

@@ -1,6 +1,6 @@
 # sardiniasustainability.github.io
 
-The website of Sardinia Sustainability.
+The website of Sustainable Sardinia.
 
 To try on your machine, after installing jekyll:
 ```
