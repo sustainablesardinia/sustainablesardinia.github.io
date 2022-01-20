@@ -7,9 +7,9 @@ reference: first_post
 
 Ci siamo! Il primo post di questo sito che sono riuscito a costruire.
 
-Se sei appena arrivato/a, per favore vai a leggere le informazioni su Sardinia
-Sustainability, il manifesto, e come si può contribuire. Puoi trovare queste
-informazioni cliccando sulla barra di navigazione.
+Se sei appena arrivato/a, per favore vai a leggere le informazioni su Sustainable
+Sardinia, il manifesto, e come si può contribuire. Puoi trovare queste informazioni
+cliccando sulla barra di navigazione.
 
 Segui Sustainable Sardinia pure su
 [Twitter](https://twitter.com/{{ site.twitter }}),

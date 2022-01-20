@@ -1,4 +1,4 @@
-# sardiniasustainability.github.io
+# sustainablesardinia.github.io
 
 The website of Sustainable Sardinia.
 
