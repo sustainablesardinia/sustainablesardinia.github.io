@@ -4,9 +4,9 @@ reference: contacts
 title: "Cuntatus"
 ---
 
-Podis intregai unu [curreu letròngiu](mailto:{{ site.email }}) a Sardinia
-Sustainability. Chi ndi bolis sciri de prus de is progetus, ddus podis agatai in
-sa [pàgina GitHub](https://github.com/{{ site.github }}).
+Podis intregai unu [curreu letròngiu](mailto:{{ site.email }}) a Sustainable Sardinia. Chi
+ndi bolis sciri de prus de is progetus, ddus podis agatai in sa [pàgina
+GitHub](https://github.com/{{ site.github }}).
 
 Podis sighiri Sustainable Sardinia in is social media:
 [Facebook](https://www.facebook.com/{{ site.facebook }}),

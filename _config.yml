@@ -32,10 +32,6 @@ social:
   - https://twitter.com/sustsardinia
   - https://github.com/sustainablesardinia
 
-# Sitemap (see sitemap.xml)
-sitemap:
-  changefreq: weekly
-
 # Build settings
 exclude: ["README.md", "Makefile"]
 

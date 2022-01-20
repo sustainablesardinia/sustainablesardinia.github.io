@@ -1,0 +1,13 @@
+<div class="visualisation">
+  <iframe id="{{ include.id }}" width="100%" src="https://vizhub.com/{{ include.user
+              }}/{{include.id }}?mode=embed" title="{{ include.title }}" language="{{ include.language }}" frameborder="0" onload="" style="background-color:white;box-shadow:none"></iframe>
+</div>
+
+<script>
+  document.getElementById("{{ include.id }}").onload = () => {
+    let frame = document.getElementById("{{ include.id }}");
+    frame.style.height = Math.round(
+      frame.parentElement.clientWidth / {{ include.aspect_ratio }}
+    ) + "px";
+  }
+</script>
