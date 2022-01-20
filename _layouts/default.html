@@ -24,7 +24,15 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
 
     {% include seo.html %} <!-- Links --> <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url | replace:"index.html","" }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}{{ site.baseurl }}/feed.xml" /> <!-- Favicons --> {% include favicons.html %} <!-- CSS --> <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/styles.css?version-{{ site.version }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{
+    site.url }}{{ site.baseurl }}/feed.xml" /> <!-- Favicons --> {% include favicons.html
+    %} <!-- CSS --> <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl
+    }}/assets/styles.css?version-{{ site.version }}">
+    
+    
+    {% if site.google_analytics %}
+      {% include site-analytics.html %}
+    {% endif %}
   </head>
 
   <body class="lang-{{ page.lang }}{% if page.collection %} type-{{ page.collection }}{%
@@ -57,9 +65,6 @@
     <!-- JS -->
   <!--[if lt IE 9]><script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <script src="{{ site.url }}{{ site.baseurl }}/assets/scripts.js?version-{{ site.version }}" type="text/javascript"></script>
-    {% if site.google_analytics %}
-      {% include site-analytics.html %}
-    {% endif %}
     {% for script in page.scripts %}
       <script src="{{ site.url }}{{ site.baseurl }}{{ script }}?tag-{{ site.tag }}" type="text/javascript"></script>
     {% endfor %}
